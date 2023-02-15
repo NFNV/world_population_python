@@ -13,3 +13,7 @@ def get_population(country_dict):
     labels = population_dict.keys()
     values = population_dict.values()
     return labels, values
+
+def population_by_country(data, country):
+    result = list(filter(lambda i: i["Country"] == country, data))
+    return result
